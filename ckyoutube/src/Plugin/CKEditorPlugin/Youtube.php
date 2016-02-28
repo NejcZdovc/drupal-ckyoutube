@@ -22,31 +22,32 @@ use Drupal\editor\Entity\Editor;
  */
 class Youtube extends PluginBase implements CKEditorPluginInterface, CKEditorPluginButtonsInterface {
 
-  function getDependencies(Editor $editor) {
-    return array();
-  }
+    function getDependencies(Editor $editor) {
+        return array();
+    }
 
-  function getLibraries(Editor $editor) {
-    return array();
-  }
+    function getLibraries(Editor $editor) {
+        return array();
+    }
 
-  function isInternal() {
-    return FALSE;
-  }
+    function isInternal() {
+        return FALSE;
+    }
 
-  function getFile() {
-    return drupal_get_path('module', 'ckyoutube') . '/js/plugins/youtube/plugin.js';
-  }
+    function getFile() {
+        return drupal_get_path('module', 'ckyoutube') . '/js/plugins/youtube/plugin.js';
+    }
 
-  function getButtons() {
-    return array(
-      'Youtube' => array(
-        'label' => t('Youtube'),
-        'image' => drupal_get_path('module', 'ckyoutube') . '/js/plugins/youtube/images/icon.png'
-      )
-    );
-  }
-  public function getConfig(Editor $editor) {
-    return array();
-  }
+    function getButtons() {
+        return array(
+            'Youtube' => array(
+                'label' => t('Youtube'),
+                'image' => drupal_get_path('module', 'ckyoutube') . '/js/plugins/youtube/images/icon.png'
+            )
+        );
+    }
+
+    public function getConfig(Editor $editor) {
+        return array();
+    }
 }
