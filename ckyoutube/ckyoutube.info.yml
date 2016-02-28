@@ -1,0 +1,8 @@
+name: CKEditor Youtube
+type: module
+description: This plugin adds youtube button.
+core: 8.x
+package: CKEditor
+version: 1.0
+dependencies:
+  - ckeditor
